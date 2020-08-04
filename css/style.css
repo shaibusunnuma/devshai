@@ -119,7 +119,6 @@ strong{font-weight: var(--fw-bold)}
 
 .section__subtitle--intro,
 .section__subtitle--about {
- 
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
@@ -182,7 +181,6 @@ header{
 @media screen and (min-width: 600px) {
     .intro {
         display: grid;
-        
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
@@ -191,14 +189,8 @@ header{
             "img subtitle";
         grid-template-columns: max-content max-content;
     }
-    
-    .section__title--intro {
-        font-weight: var(--fw-reg);
-        text-align: right;
-    }
-  
+
     .section__subtitle--intro {
-       
         align-self: center;
         grid-column: -1 / 1; /*makes it stretch*/
         grid-row: 2;
@@ -208,15 +200,90 @@ header{
         width: calc(100% + 3em);
     }
 
+    .section__title--intro {
+        font-weight: var(--fw-reg);
+        text-align: right;
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
 
 @media screen and (max-width:900px){
     .section__subtitle--intro {
         font-size: var(--fs-h4);
-      
     }
 }
 
+/* Portfolio styles */
+.portfolio_title strong{
+    display: block;
+}
+
+.portfolio_intro{
+    align-content: flex;
+    font-weight: var(--fw-reg);  
+}
+
+.portfolio_subtitle{
+    background: var(--clr-accent);
+    padding: 0.25em 0.25em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+@media (min-width: 600px) {
+    .portfolio_intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+    }    
+    
+    .portfolio_subtitle{
+        box-shadow: var(--bs);
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        position: relative;
+        text-align: center;
+        left: -1em;
+        width: calc(100% + 2em);
+        z-index: 2;
+    }
+}
+@media (max-width: 800px){
+    .portfolio_subtitle{
+        font-size: 1rem;
+    }
+}
+
+.portfolio-item-individual a{
+    color: var(--clr-light);
+}
+
+.portfolio-item-individual a:hover{
+    color: var(--clr-accent);
+}
 
 
 

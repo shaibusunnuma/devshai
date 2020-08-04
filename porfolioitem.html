@@ -14,40 +14,46 @@
     </head>
     <body>
         <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger">
-            </button>
-            <nav class="nav">
+            <!-- navigation bar -->
+            <nav class="nav" id="navbar">
                 <div class="logo">
                     <h3>&ltdevShai&gt</h3>
                 </div>
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
                 </ul>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger">
+                </button>
             </nav>
         </header>
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                The title<strong>of my project</strong>
+        <section class="portfolio_intro">
+            <h1 class="portfolio_title">
+                The <strong>QuizApp</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">The quizApp</p>
+            <p class="portfolio_subtitle">A simple app to learn geography</p>
             <img src="images//portfolio-01.jpg" alt="Shaibu Sunnuma" class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut esse perspiciatis mollitia quasi earum temporibus vitae quos numquam ex laudantium deleniti minus, harum repellat nisi. Illo non illum sunt.</p>
+            <p>This is my first app created with android studio and Kotlin. It is written purely in kotlin and xml.</p>
             <img src="images/portfolio-details.jpg">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus itaque facilis, placeat culpa dolor vitae incidunt! Dolores vitae magnam illum minus nihil, magni enim culpa harum quis nobis reiciendis molestiae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa quis natus, adipisci rerum mollitia vitae voluptatem tempora accusantium, explicabo vero ratione exercitationem? Veritatis voluptate nostrum vel ratione dolorem nihil?</p>
+            <p>In this project I focused on linear layouts and how the screen will transition on different divices.
+                As such, all the acitivities were designed with linear layouts. One other thing I learned from this
+                project is desingning a text view to look like a button with button properties. Thanks to android
+                studio's layout properties.
+            </p>
+            <p>As usual this project was created with love and you can check it out <a href="https://github.com/shaibusunnuma/QuizApp-Kotlin">here</a>. You can clone it
+            and modify it anyway you. Please don't hesitate to contact me if you have any questions or ideas to make it better.</p>
         </div>
         
         
         <footer class="footer">
-            <a href="mailto:helloshaibu.dev" class="footer__link">helloshaibu.dev</a>
+            <a href="mailto:shaibusunnuma@gmail.com" class="footer__link">shaibusunnuma@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item" class="social-list__link">
                     <a class="social-list__link" href="codepen.io"><i class="fab fa-twitter-square"></i></a>
@@ -64,6 +70,6 @@
                 
             </ul>
         </footer>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
