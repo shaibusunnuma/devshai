@@ -110,10 +110,6 @@ strong{font-weight: var(--fw-bold)}
     margin-bottom: .25em;
 }
 
-
-
-
-
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -164,11 +160,9 @@ header{
     background-image: url(../images/bg_intro2.jpg);
     background-size: cover;
     margin: 0;
+    min-height: 50hv;
 }
 
-/* .section__title--intro strong {
-    display: flex;
-} */
 
 .section__title--intro {
     font-weight: var(--fw-reg);
@@ -176,12 +170,7 @@ header{
 }
 
 .intro{
-    position: relative;
-    /* background-blend-mode: multiply; */
-    /* color: var(--clr-light); */
-    /* text-align: center; */
-    
-    
+    position: relative; 
 }
 
 .section__subtitle--intro {
@@ -577,13 +566,3 @@ nav{
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-
-
-
-
-
