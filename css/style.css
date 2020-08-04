@@ -336,7 +336,7 @@ nav{
 }
 
 @media screen and (max-width:800px){
-    html,body{
+    .header,html,body{
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -441,7 +441,10 @@ nav{
 .sticky + .my-services {
     padding-top: 60px;
 }
-
+.header{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 
