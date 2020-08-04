@@ -298,7 +298,6 @@ nav{
     min-height: 8vh;
     background-color: var(--clr-accent);
     z-index: 100;
-
 }
 
 .logo{
@@ -337,7 +336,7 @@ nav{
 }
 
 @media screen and (max-width:800px){
-    body{
+    html,body{
         overflow-x: hidden;
     }
 
