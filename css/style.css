@@ -44,6 +44,7 @@ html{
     margin: 0;
     padding: 0;
     border: none;
+    overflow-x: hidden;
 }
 
 body {
@@ -54,6 +55,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Typography */
