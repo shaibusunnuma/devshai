@@ -40,8 +40,10 @@ function myFunction() {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x);};
+   
   }
 } 
+
+var x=window.scrollX;
+var y=window.scrollY;
+window.onscroll=function(){window.scrollTo(x);};
