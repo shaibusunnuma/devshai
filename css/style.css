@@ -354,6 +354,7 @@ nav{
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 100;
+        overflow: hidden;
     }
     .nav__link{
         opacity: 0;
