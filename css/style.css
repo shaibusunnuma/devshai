@@ -137,7 +137,7 @@ strong{font-weight: var(--fw-bold)}
 
 /*===========Share Text===============*/
 .share{
-    background: black;
+    background: var(--clr-dark);
     text-align: center;
     margin-top: 0;
     font-size: large;
@@ -145,11 +145,11 @@ strong{font-weight: var(--fw-bold)}
 }
 
 .share a{
-    color: var(--clr-light);
+    color: var(--clr-accent);
 }
 
 .share a:hover{
-    color: var(--clr-accent);
+    color: var(--clr-light);
 }
 
 
@@ -454,7 +454,7 @@ nav{
     background-color: var(--clr-dark);/*change this to white later*/
     background-image: url(../images/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: overlay;
     color: var(--clr-light);
     text-align: center;
 }
@@ -480,6 +480,14 @@ nav{
 }
 .services {
     margin-bottom: 4em;
+}
+
+.services a{
+    color: var(--clr-accent)
+}
+
+.services a:hover{
+    color: var(--clr-light);
 }
 
 @media (min-width: 800px) {
@@ -596,6 +604,7 @@ nav{
     text-decoration: none;
 }
 .footer__link {
+    font-size: var(--fs-h4);
     font-weight: var(--fw-bold);
 }
 
