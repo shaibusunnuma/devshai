@@ -347,13 +347,12 @@ nav{
         height: 92vh;
         top: 6vh;
         background-color: var(--clr-accent);
-        display: flex;
+        display: hidden;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        z-index: 100;
         overflow: hidden;
     }
     .nav__link{
