@@ -471,7 +471,7 @@ nav{
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
-    opacity: 0.1;
+    opacity: 0.3;
 }
 
 .service {
