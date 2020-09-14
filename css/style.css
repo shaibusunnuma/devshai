@@ -8,21 +8,21 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
-    
+
     --fw-reg: 300;
     --fw-bold: 900;
-    
+
     --clr-dark: #393e46; /*bacgground*/
     --clr-light: #f4f4f4;
     --clr-accent: #f0a500;/*greenish color of the site*/
-    
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.75rem;
     --fs-h4: 1rem;
     --fs-body: 1rem;
-    
-    
+
+
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15); /*box shadow*/
 }
@@ -171,12 +171,12 @@ header{
 }
 
 .intro{
-    position: relative; 
+    position: relative;
 }
 
 .section__subtitle--intro {
     display: inline-block;
-   
+
 }
 @media screen and (min-width: 600px) {
     .intro {
@@ -184,7 +184,7 @@ header{
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: 
+        grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: max-content max-content;
@@ -229,7 +229,7 @@ header{
 
 .portfolio_intro{
     align-content: flex;
-    font-weight: var(--fw-reg);  
+    font-weight: var(--fw-reg);
 }
 
 .portfolio_subtitle{
@@ -247,18 +247,18 @@ header{
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: 
+        grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    
+
     .intro__img {
         grid-area: img;
         min-width: 250px;
         position: relative;
-    }    
-    
+    }
+
     .portfolio_subtitle{
         box-shadow: var(--bs);
         align-self: start;
@@ -287,8 +287,6 @@ header{
 
 
 
-
-
 /*=============Navigation================*/
 
 nav{
@@ -301,10 +299,18 @@ nav{
 }
 
 .logo{
-    color: var(--clr-dark);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 20px;
+}
+
+.logo a{
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+
+.logo a:hover{
+    color: var(--clr-light);
 }
 
 
@@ -321,8 +327,8 @@ nav{
 
 .nav__list{
     display: flex;
-    justify-content: space-around; 
-    width: 40%;       
+    justify-content: space-around;
+    width: 40%;
 }
 
 .hamburger{
@@ -331,7 +337,7 @@ nav{
 
 @media screen and (max-width:1024px){
     .nav__list{
-        width: 60%;       
+        width: 60%;
     }
 }
 
@@ -429,7 +435,7 @@ nav{
 }
 
 .hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; } 
+.hamburger::after { bottom: 6px; }
 
 
 .sticky{
@@ -497,7 +503,7 @@ nav{
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .service + .service {
         margin-left: 2em;
     }
@@ -510,13 +516,14 @@ nav{
 
 .about-me__img {
     box-shadow: var(--bs);
+    top: 15%
 }
 
 @media (min-width: 600px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
+        grid-template-areas:
             "title img"
             "subtitle img"
             "text img";
@@ -526,11 +533,11 @@ nav{
     .about-me__body{
         margin-top: 0 auto;
     }
-    
+
     .section__title--about {
         grid-area: title;
     }
-    
+
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
@@ -540,7 +547,7 @@ nav{
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-    
+
     .about-me__img {
         grid-area: img;
         position: relative;
@@ -554,11 +561,11 @@ nav{
 .my-work {
     background-color: var(--clr-light);
     color: var(--clr-dark);
-    text-align: center;    
+    text-align: center;
 }
 
 .portfolio {
-   
+
     display: grid;
     /* grid-template-columns: repeat(2,400px); */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -572,7 +579,7 @@ nav{
 
 .portfolio__img {
     display: block;
-    transition: 
+    transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
@@ -599,7 +606,7 @@ nav{
     font-size: var(--fs-h3);
 }
 
-.footer a { 
+.footer a {
     color: inherit;
     text-decoration: none;
 }

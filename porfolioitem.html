@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shaibu Sunnuma Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -17,7 +17,7 @@
             <!-- navigation bar -->
             <nav class="nav" id="navbar">
                 <div class="logo">
-                    <h3>&ltdevShai&gt</h3>
+                    <h3><a class="hover__link" href="index.html#home">&ltdevShai&gt</a></h3>
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
@@ -31,6 +31,50 @@
             </nav>
         </header>
 
+        <section class="portfolio_intro" id="portfolio1">
+            <h1 class="portfolio_title">
+                The <strong>FitnessApp</strong>
+            </h1>
+            <p class="portfolio_subtitle">A fitness app created with Android Studio</p>
+            <img src="images//portfolio-01.jpg" alt="Shaibu Sunnuma" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p><strong>DATABASE</strong></p>
+            <img src="images/portfolio-details.jpg">
+            <p>Every project that I work on is to hone my skill on new things that I learn from android.
+               After learning about SQLite, I did this project to implement what I had learned in databases.
+                I have implemented SQLite specifically in the history activity where I have saved all the workout
+                sessions of a user
+            </p>
+            <p>As usual this project was created with love and you can check it out <a href="https://github.com/shaibusunnuma/QuizApp-Kotlin">here</a>. You can clone it
+            and modify it anyway you. Please don't hesitate to contact me if you have any questions or ideas to make it better.</p>
+        </div>
+        <hr id="portfolio2" width="80%" size="8" align="center">
+
+        <!--Item 2-->
+        <section class="portfolio_intro" >
+            <h1 class="portfolio_title">
+                The <strong>DrawApp</strong>
+            </h1>
+            <p class="portfolio_subtitle">A drawing application for kids</p>
+            <img src="images//portfolio-01.jpg" alt="Shaibu Sunnuma" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p><strong>PERMISSIONS</strong></p>
+            <img src="images/portfolio-details.jpg">
+            <p>This app is full of permision requests. The app was inspired by  drawing app. Unlike his,
+               used Kotlin and approached it in a different way which reduced the code by about 35%. Once
+                again the power of Kotlin.
+            </p>
+            <p>As usual this project was created with love and you can check it out <a href="https://github.com/shaibusunnuma/QuizApp-Kotlin">here</a>. You can clone it
+            and modify it anyway you. Please don't hesitate to contact me if you have any questions or ideas to make it better.</p>
+        </div>
+
+        <hr id="portfolio3" width="80%" size="8" align="center">
+
+        <!--item 3-->
         <section class="portfolio_intro">
             <h1 class="portfolio_title">
                 The <strong>QuizApp</strong>
@@ -40,7 +84,7 @@
         </section>
 
         <div class="portfolio-item-individual">
-            <p>This is my first app created with android studio and Kotlin. It is written purely in kotlin and xml.</p>
+            <p><strong>LAYOUTS</strong></p>
             <img src="images/portfolio-details.jpg">
             <p>In this project I focused on linear layouts and how the screen will transition on different divices.
                 As such, all the acitivities were designed with linear layouts. One other thing I learned from this
@@ -50,8 +94,8 @@
             <p>As usual this project was created with love and you can check it out <a href="https://github.com/shaibusunnuma/QuizApp-Kotlin">here</a>. You can clone it
             and modify it anyway you. Please don't hesitate to contact me if you have any questions or ideas to make it better.</p>
         </div>
-        
-        
+
+
         <footer class="footer">
             <a href="mailto:shaibusnnuma@gmail.com" class="footer__link">shaibusunnuma@gmail.com</a>
             <ul class="social-list">
@@ -66,7 +110,7 @@
                 </li>
                 <li class="social-list__item" class="social-list__link">
                     <a class="social-list__link" href="https://www.instagram.com/shaibu108/"><i class="fab fa-instagram"></i></a>
-                </li>           
+                </li>
             </ul>
         </footer>
         <script src="js/index.js"></script>
